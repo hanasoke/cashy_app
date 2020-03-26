@@ -1,3 +1,6 @@
+import 'package:cashy_apps/font_style.dart';
+import 'font_style.dart';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -29,8 +32,8 @@ class MyApp extends StatelessWidget {
                   image: AssetImage('assets/images/money.png'),
                   height: 200,
                 ),
-                Text("Rich Together"),
-                Text("Save your money little bit and we will help to be rich")
+                Text("Rich Together", style: mainHeader,),
+                Text("Save your money little bit and we will help to be rich", style: subHeader,)
               ],
             ),
           ),
