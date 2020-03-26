@@ -17,14 +17,20 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Cashy"),
           backgroundColor: Colors.red,
-          actions: <Widget>[          
-            IconButton(icon: Icon(Icons.mail), onPressed: () {})
-          ],
+          
         ),
         body: SafeArea(
-          child: Image(
-            image: AssetImage('assets/images/money.png'),
-            height: 200,
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                Image(
+                  image: AssetImage('assets/images/money.png'),
+                  height: 200,
+                ),
+                Text("Rich Together"),
+                Text("Save your money little bit and we will help to be rich")
+              ],
+            ),
           ),
         ),
       ),
