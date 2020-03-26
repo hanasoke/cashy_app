@@ -32,7 +32,13 @@ class MyApp extends StatelessWidget {
                   image: AssetImage('assets/images/money.png'),
                   height: 200,
                 ),
-                Text("Rich Together", style: mainHeader,),
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: 20.0,
+                    bottom: 4.0
+                  ),
+                  child : Text("Rich Together", style: mainHeader),
+                ),
                 Text("Save your money little bit and we \n will help to be rich", style: subHeader,
                 textAlign: TextAlign.center)
               ],
