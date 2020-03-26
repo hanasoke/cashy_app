@@ -25,23 +25,29 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Container(
             margin: EdgeInsets.only(left: 23, top: 0, right: 23, bottom: 0),
-            padding: EdgeInsets.only(left: 0, top: 50, right: 0, bottom: 0),
-            child: Column(
+            padding: EdgeInsets.only(left: 0, top: 0, right: 0, bottom: 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Image(
-                  image: AssetImage('assets/images/money.png'),
-                  height: 200,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    top: 20.0,
-                    bottom: 4.0
+                Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('assets/images/money.png'),
+                    height: 200,
                   ),
-                  child : Text("Rich Together", style: mainHeader),
-                ),
-                Text("Save your money little bit and we \n will help to be rich", style: subHeader,
-                textAlign: TextAlign.center)
-              ],
+                  Padding(
+                    padding: EdgeInsets.only(
+                      top: 20.0,
+                      bottom: 4.0
+                    ),
+                    child : Text("Rich Together", style: mainHeader),
+                  ),
+                  Text("Save your money little bit and we \n will help to be rich", style: subHeader,
+                  textAlign: TextAlign.center)
+                ],
+              ),
+            ],
             ),
           ),
         ),
