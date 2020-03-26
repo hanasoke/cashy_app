@@ -8,6 +8,6 @@ TextStyle mainHeader =  TextStyle(
 
 TextStyle subHeader =  TextStyle(
   fontSize: 14,
-  color: Colors.brown,
+  color: Colors.grey,
   fontFamily: 'Poppins'
 );
