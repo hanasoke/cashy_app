@@ -1,5 +1,6 @@
 import 'package:cashy_apps/font_style.dart';
 import 'font_style.dart';
+import 'custom_colors.dart';
 
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Cashy"),
-          backgroundColor: Colors.red,
+          backgroundColor: darkBlue,
           
         ),
         body: SafeArea(
